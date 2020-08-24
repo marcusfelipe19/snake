@@ -4,7 +4,7 @@ function Snake:init(x, y, width, height)
     self.x = x
     self.y = y
     self.width = width
-    self.height = height
+    self.height = height + score * 2
     self.dx = 0
     self.dy = 0
 end

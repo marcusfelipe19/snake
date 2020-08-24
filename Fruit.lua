@@ -10,11 +10,11 @@ function Fruit:init(x, y, width, height)
 end
 
 function Fruit:collides(snake)
-    if self.x > paddle.x + paddle.width or paddle.x > self.x + self.width then
+    if self.x > snake.x +snake.width or snake.x > self.x + self.width then
         return false
     end
 
-    if self.y > paddle.y + paddle.height or paddle.y > self.y + self.height then
+    if self.y > snake.y + snake.height or snake.y > self.y + self.height then
         return false
     end
 

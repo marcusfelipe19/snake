@@ -12,6 +12,8 @@ WINDOW_HEIGHT = 720
 VIRTUAL_WIDTH = 432
 VIRTUAL_HEIGHT = 243
 
+score = 0
+
 function love.load()
     love.graphics.setDefaultFilter('nearest', 'nearest')
 
@@ -26,7 +28,7 @@ function love.load()
 
     --Colocar o Som depois aquiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii!!!!
 
-    push:setupScreen(VIRTUAL_WIDTH, VIRTUAL_HEIGHT, WINDOW_WIDTH, WINDOW_HEIGHT {
+    push:setupScreen(VIRTUAL_WIDTH, VIRTUAL_HEIGHT, WINDOW_WIDTH, WINDOW_HEIGHT, {
         fullscreen = false,
         resizable = true,
         vsync = true
